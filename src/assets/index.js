@@ -27,9 +27,6 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import fst from './company/fst-nobgt.png'
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 
 
 export {
@@ -57,9 +54,5 @@ export {
   meta,
   shopify,
   starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
   fst,
 };

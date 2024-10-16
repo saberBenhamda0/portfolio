@@ -9,19 +9,17 @@ import {
     reactjs,
     redux,
     tailwind,
-    nodejs,
     git,
     figma,
     docker,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     fst,
     logo,
   } from "../assets";
   import IMG from '../assets/IMG.jpg'
 
+  import skillswap from '../assets/skillswap.png'
+  import softfast from '../assets/softfast.png'
   import django from '../assets/tech/django.svg'
   
   export const navLinks = [
@@ -107,7 +105,7 @@ import {
       company_name: "FST TANGER",
       icon: fst,
       iconBg: "#E6DEDD",
-      date: "March 2022 -  2025",
+      date: "March 2022 - 2025",
       points: [
         "Proficiency in developing and maintaining dynamic web applications using modern web development technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -116,32 +114,42 @@ import {
       ],
     },
     {
-      title: "Master's degree",
-      company_name: "soon",
+      title: "Master's degree in Software Engineering",
+      company_name: "SOON",
       icon: logo,
       iconBg: "#E6DEDD",
       date: "Jan 2025 - Feb 2027",
       points: [
-        "comming soon"
+        "Specializing in software design, architecture, and development of large-scale systems.",
+        "Conducting research on software development methodologies and best practices.",
+        "Developing robust, maintainable, and scalable software solutions to meet complex requirements.",
+        "Collaborating with academic and industry experts to implement cutting-edge software engineering practices in real-world projects.",
       ],
     },
     {
-      title: "First job",
-      company_name: "soon",
+      title: "First Job as a Full-Stack Developer.",
+      company_name: "SOON",
       icon: logo,
       iconBg: "#383E56",
       date: "2027",
       points: [
-
+        "Building and maintaining full-stack applications with a focus on scalability and performance.",
+        "Working with cutting-edge technologies to develop high-quality, user-friendly products.",
+        "Contributing to team efforts by participating in agile development and sprint planning.",
+        "Engaging in client discussions to gather requirements and deliver customized solutions.",
       ],
     },
     {
-      title: "Launching my business.",
-      company_name: "",
+      title: "Launching my Business.",
+      company_name: "Self-Employed",
       icon: logo,
       iconBg: "#E6DEDD",
       date: "One Day",
       points: [
+        "Establishing a tech startup to provide innovative web and mobile solutions.",
+        "Managing all aspects of the business, including marketing, sales, and product development.",
+        "Building a team of talented professionals to create cutting-edge digital products.",
+        "Focusing on customer-centric solutions to solve real-world problems.",
       ],
     },
   ];
@@ -159,7 +167,7 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "skillSwap",
       description:
         "Skills Swap is an innovative platform designed to empower individuals by facilitating the exchange of skills. Whether you're looking to learn a new language, master a technical skill, or enhance your creative abilities, Skills Swap connects you with others who possess the expertise you seek. In return, you offer your own skills, creating a community-driven network of learning and collaboration. This project aims to democratize education, enabling users to grow personally and professionally by leveraging the knowledge and talents of others in a mutually beneficial exchange",
       tags: [        {
@@ -175,11 +183,12 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: skillswap,
+      source_code_link: "https://github.com/saberBenhamda0/skillSwap",
+      live_demo_link:"http://myappsfrontends.s3-website-us-east-1.amazonaws.com/",
     },
     {
-      name: "Car Rent",
+      name: "softfast",
       description:
         "SoftFast is a cutting-edge marketplace tailored for developers to sell their code and digital products for profit. Designed to support creators in the tech industry, SoftFast offers a streamlined platform where developers can showcase their work, connect with potential buyers, and monetize their code. Whether you're a freelancer with a unique tool or a seasoned developer offering comprehensive software solutions, SoftFast provides the tools and visibility needed to turn your projects into profitable ventures.",
       tags: [
@@ -196,50 +205,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: softfast,
+      source_code_link: "https://github.com/saberBenhamda0/softfast",
+      live_demo_link:"http://softfast.s3-website-us-east-1.amazonaws.com",
     },
   ];
   

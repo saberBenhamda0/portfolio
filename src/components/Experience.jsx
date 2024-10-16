@@ -94,19 +94,22 @@ export const lineAnimation = () => {
   };
 };
 
-const InfoBlock = () => {
+const InfoBlock = (experience) => {
   return (
     <div>
       <h2 className="m-4 text-2xl text-[#fdfdfd] font-semibold">
-        Bachelor Degree LOL
+        {experience.experience?.title}
       </h2>
       <h4 className="text-lg ml-4 mb-4 text-[#817c9a]">
-        FST Tanger
+        {experience.experience?.company_name}
       </h4>
       <ul className="ml-6 mb-4 text-[#a09eaa]">
-        <li className="my-1 ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde, nobis minima voluptates neque pariatur perferendis</li>
-        <li className="my-1 ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae minima nostrum facilis illum odit excepturi, ex!</li>
-        <li className="my-1 ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum harum voluptate dignissimos nisi officia deser</li>
+        {experience.experience?.points?.map((point)=> { 
+          return (
+            <li className="my-1 ml-4">{point}</li>
+
+          )
+        })}
       </ul>
     </div>
   );
@@ -115,6 +118,7 @@ const InfoBlock = () => {
 const ExperienceCardPc = ({ experience, index }) => {
   return (
     <motion.div
+    key={index}
       variants={
         index % 2 === 1
           ? fadeInForExpCard1("left", "tween", index / 10, 1, "easeIn", index)
@@ -124,7 +128,7 @@ const ExperienceCardPc = ({ experience, index }) => {
     >
       {index % 2 === 1 && (
         <div className="h-full bg-[#1d1836] shadow-lg border-b-4 border-white rounded-md mr-14 w-96">
-          <InfoBlock />
+          <InfoBlock experience={experience} />
         </div>
       )}
 
@@ -134,7 +138,7 @@ const ExperienceCardPc = ({ experience, index }) => {
 
       {index % 2 === 0 && (
         <div className="h-full bg-[#1d1836] border-b-4 border-white shadow-lg rounded-md ml-14 w-96">
-          <InfoBlock />
+          <InfoBlock experience={experience} />
         </div>
       )}
     </motion.div>
@@ -150,7 +154,7 @@ const ExperienceCardMobile = ({ experience, index }) => {
       className="flex flex-row-reverse items-center justify-between w-full my-4"
     >
         <div className="h-full bg-[#1d1836] w-full shadow-lg border-b-4 border-white rounded-md">
-          <InfoBlock />
+          <InfoBlock experience={experience} />
         </div>
 
       <motion.div className="relative flex items-center justify-center w-20 h-20 bg-white border-solid rounded-full">

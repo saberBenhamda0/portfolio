@@ -4,6 +4,7 @@ import { styles } from '../styles'
 import { github } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
+import live_demo_icon from '../assets/live_demo.svg'
 
 import { fadeIn, textVariant } from '../utils/motion'
 
@@ -11,7 +12,7 @@ import { fadeIn, textVariant } from '../utils/motion'
 
 
 
-export const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
+export const ProjectCard = ({index, name, description, tags, image, source_code_link, live_demo_link}) => {
   return (
 <div class="flex justify-center hover:cursor-pointer w-full lg:w-[47%] h-[700px] items-center">
   <div class="relative group  shadow-lg rounded-lg overflow-hidden">
@@ -29,8 +30,8 @@ export const ProjectCard = ({index, name, description, tags, image, source_code_
       <a href={source_code_link} target="_blank">
       <img  className='w-10 h-10 ' src={github} />
       </a>
-      <a href={source_code_link} target="_blank">
-      <img  className='w-10 h-10 ' src={github} />
+      <a href={live_demo_link} target="_blank">
+      <img  className='w-10 h-10 ' src={live_demo_icon} />
       </a>    </div>
     
     </div>
