@@ -101,16 +101,16 @@ import {
   
   const experiences = [
     {
-      title: "Bachelor's degree in Computer Science.",
+      title: "Bachelor's Degree in Computer Science",
       company_name: "FST TANGER",
       icon: fst,
       iconBg: "#E6DEDD",
-      date: "March 2022 - 2025",
+      date: "September 2022 - June 2025",
       points: [
-        "Proficiency in developing and maintaining dynamic web applications using modern web development technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Built and maintained small to mid-sized web projects, applying foundational knowledge of HTML, CSS, JavaScript, and React.",
+        "Worked on academic and personal projects independently and in team settings, gaining experience in project planning and (Git).",
+        "Developed responsive websites and gained familiarity with debugging.",
+        "Participated in code reviews and practiced collaborative coding, receiving feedback to improve coding practices and project efficiency.",
       ],
     },
     {
@@ -159,8 +159,6 @@ import {
       testimonial:
         "Your testimonials will help me further develop myself. You can send a testimonial on the Contact Us page.",
       name: "Saber Ben Hamda (owner of the website)",
-      designation: "CFO",
-      company: "Web developer",
       image: IMG,
     },
   ];

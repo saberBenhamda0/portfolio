@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { navLinks } from '../constants';
 import { styles } from '../styles';
 import {logo , menu, close} from '../assets'
+import resume from '../../public/resume.png'
 
 const Navbar = () => {
 
@@ -32,7 +33,11 @@ const Navbar = () => {
             className='object-contain w-8 h-8 border-0 ' />
             <p className='text-white text-[18px] font-bold cursor-pointer flex'>Saber &nbsp; <span className='hidden sm:block '> | Web Developer</span></p>
         </Link>
+
         <ul className='flex-row hidden gap-10 list-none sm:flex'>
+        <a  className='hover:text-white text-[18px] font-medium cursor-pointer ' href='/resume.pdf' download='resume' >
+            Resume
+          </a>
           {navLinks.map((Link) => (
             <li key={Link.id} 
             className={`${
